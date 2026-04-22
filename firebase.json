@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "ng_src/dist/ewaste-lab/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
