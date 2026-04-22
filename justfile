@@ -22,3 +22,11 @@ build:
 # Add a new component (usage: just generate component-name)
 generate name:
     cd {{ng_root}} && bun x ng generate component shared/{{name}}
+
+# Run a dry-run to see what the next version would be
+release-check:
+	cd {{ng_root}} && bun x semantic-release --dry-run
+
+# Official release command (used by CI)
+release:
+	cd {{ng_root}} && bun x semantic-release
