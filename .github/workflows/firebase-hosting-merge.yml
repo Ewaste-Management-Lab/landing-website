@@ -10,9 +10,23 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: cd ng_src && ng ci && ng build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install Just
+        uses: extractions/setup-just@v2
+
+      - name: Install Dependencies
+        run: just install
+
+      - name: Build Project
+        run: just build
+
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_E_WASTE_LAB }}
