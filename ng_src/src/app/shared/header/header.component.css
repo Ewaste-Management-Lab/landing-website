@@ -60,8 +60,54 @@
   background-color: var(--color-secondary);
 }
 
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: var(--spacing-sm);
+  z-index: 1001;
+}
+
+.mobile-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: var(--transition-fast);
+}
+
 @media (max-width: 768px) {
+  .mobile-toggle {
+    display: flex;
+  }
+
   .nav {
-    display: none; /* We'll implement a mobile menu later if needed */
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--color-white);
+    overflow: hidden;
+    transition: height var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav--open {
+    height: auto;
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+    gap: var(--spacing-lg);
+  }
+
+  .nav-item a.active::after {
+    display: none;
   }
 }

@@ -9,6 +9,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 006** (#12): Ensure full mobile responsiveness across all sections.
 - [x] **Task 005** (#11): Enhance "Hero" section with an image and better layout.
 - [x] **Task 004** (#10): Add "Contact Us" section with a form.
 - [x] **Task 002** (#8): Create "Student Programs" section focusing on skilling.
