@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 008** (#21): Fix missing colors and styles by importing global CSS.
 - [x] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).
 - [x] **Task 006** (#12): Ensure full mobile responsiveness across all sections.
 - [x] **Task 005** (#11): Enhance "Hero" section with an image and better layout.
