@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 013** (#30): Fix syntax error in ContactSectionComponent causing CI failure.
 - [x] **Task 012** (#27): Integrate Lucide Icons.
 - [x] **Task 011** (#26): Implement swappable Light/Dark/System theme.
 - [x] **Task 010** (#25): Configure TypeScript path aliases and refactor imports.
