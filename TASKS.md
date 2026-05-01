@@ -1,14 +1,11 @@
 # Project Tasks
 
 ## Backlog
-- [ ] **Task 004** (#10): Add "Contact Us" section with a form.
-- [ ] **Task 005** (#11): Enhance "Hero" section with an image and better layout.
-- [ ] **Task 006** (#12): Ensure full mobile responsiveness across all sections.
-- [ ] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).
 
 ## In Progress
 
 ## Completed
+- [x] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).
 - [x] **Task 006** (#12): Ensure full mobile responsiveness across all sections.
 - [x] **Task 005** (#11): Enhance "Hero" section with an image and better layout.
 - [x] **Task 004** (#10): Add "Contact Us" section with a form.
