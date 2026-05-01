@@ -1,6 +1,7 @@
 .services {
   padding: var(--spacing-4xl) 0;
-  background-color: var(--color-gray-50);
+  background-color: var(--color-bg-secondary);
+  transition: background-color var(--transition-normal);
 }
 
 .services-header {
@@ -11,6 +12,11 @@
 
 .services-header h2 {
   margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.services-header p {
+  color: var(--color-text-secondary);
 }
 
 .services-grid {

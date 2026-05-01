@@ -1,6 +1,7 @@
 .contact {
   padding: var(--spacing-4xl) 0;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-primary);
+  transition: background-color var(--transition-normal);
 }
 
 .contact-grid {
@@ -12,10 +13,12 @@
 
 .contact-info h2 {
   margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
 }
 
 .contact-info p {
   margin-bottom: var(--spacing-xl);
+  color: var(--color-text-secondary);
 }
 
 .contact-details {
@@ -23,19 +26,27 @@
   padding: 0;
 }
 
-.contact-details li {
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
   margin-bottom: var(--spacing-md);
-  color: var(--color-gray-700);
+  color: var(--color-text-secondary);
+}
+
+.contact-icon {
+  color: var(--color-secondary);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
-  background-color: var(--color-gray-50);
+  background-color: var(--color-bg-secondary);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid var(--color-border-primary);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .form-group {
@@ -46,17 +57,19 @@
 
 .form-group label {
   font-weight: var(--font-weight-medium);
-  color: var(--color-gray-700);
+  color: var(--color-text-primary);
   font-size: var(--font-size-sm);
 }
 
 .form-group input,
 .form-group textarea {
   padding: var(--spacing-sm) var(--spacing-md);
-  border: 1px solid var(--color-gray-300);
+  border: 1px solid var(--color-border-secondary);
   border-radius: var(--radius-md);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   font-family: inherit;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .form-group input:focus,
@@ -64,6 +77,11 @@
   outline: none;
   border-color: var(--color-secondary);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.btn-icon {
+  margin-left: var(--spacing-sm);
+  vertical-align: middle;
 }
 
 @media (max-width: 768px) {

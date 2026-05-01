@@ -3,11 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContainerComponent } from '@shared/container/container.component';
 import { ButtonComponent } from '@shared/button/button.component';
+import { LucideAngularModule, MapPin, Mail, Send } from 'lucide-angular';
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ContainerComponent, ButtonComponent],
+  imports: [
+    CommonModule, 
+    FormsModule, 
+    ReactiveFormsModule, 
+    ContainerComponent, 
+    ButtonComponent,
+    LucideAngularModule
+  ],
   template: `
     <section class="contact" id="contact">
       <app-container>
@@ -18,11 +26,13 @@ import { ButtonComponent } from '@shared/button/button.component';
               Interested in our programs or want to collaborate? Reach out to us.
             </p>
             <ul class="contact-details">
-              <li>
-                <strong>Location:</strong> Makerere University, Kampala, Uganda
+              <li class="contact-detail-item">
+                <lucide-icon [name]="MapPinIcon" [size]="20" class="contact-icon"></lucide-icon>
+                <span><strong>Location:</strong> Makerere University, Kampala, Uganda</span>
               </li>
-              <li>
-                <strong>Email:</strong> [Lab Email]
+              <li class="contact-detail-item">
+                <lucide-icon [name]="MailIcon" [size]="20" class="contact-icon"></lucide-icon>
+                <span><strong>Email:</strong> [Lab Email]</span>
               </li>
             </ul>
           </div>
@@ -40,7 +50,10 @@ import { ButtonComponent } from '@shared/button/button.component';
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
               </div>
-              <app-button type="submit" variant="primary">Send Message</app-button>
+              <app-button type="submit" variant="primary">
+                Send Message
+                <lucide-icon [name]="SendIcon" [size]="18" class="btn-icon"></lucide-icon>
+              </app-button>
             </form>
           </div>
         </div>
@@ -50,6 +63,11 @@ import { ButtonComponent } from '@shared/button/button.component';
   styleUrl: './contact-section.component.css',
 })
 export class ContactSectionComponent {
+  readonly MapPinIcon = MapPin;
+  readonly MailIcon = Mail;
+  readonly SendIcon = Send;
+...
+
   onSubmit(event: Event) {
     event.preventDefault();
     // Implementation for form submission would go here

@@ -1,18 +1,18 @@
 .card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray-200);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  transition: all var(--transition-normal);
   height: 100%;
 }
 
 .card--hoverable:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--color-gray-300);
+  border-color: var(--color-border-secondary);
 }
 
 .card-image img {
@@ -35,11 +35,11 @@
 .card-title {
   margin: 0;
   font-size: var(--font-size-xl);
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 .card-body {
-  color: var(--color-gray-600);
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
   flex-grow: 1;
 }

@@ -1,7 +1,8 @@
 .partners {
   padding: var(--spacing-3xl) 0;
-  background-color: var(--color-gray-50);
-  border-top: 1px solid var(--color-gray-200);
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border-primary);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .partners-inner {
@@ -10,7 +11,7 @@
 
 .partners-title {
   font-size: var(--font-size-lg);
-  color: var(--color-gray-500);
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: var(--spacing-2xl);
@@ -33,13 +34,14 @@
 .partner-name {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  color: var(--color-gray-400);
+  color: var(--color-text-muted);
 }
 
 .partner-placeholder {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
-  color: var(--color-gray-300);
+  color: var(--color-text-muted);
+  opacity: 0.5;
   font-style: italic;
 }
 
