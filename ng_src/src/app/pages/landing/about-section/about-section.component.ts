@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ContainerComponent } from '../../../shared/container/container.component';
-import { CardComponent } from '../../../shared/card/card.component';
+import { ContainerComponent } from '@shared/container/container.component';
+import { CardComponent } from '@shared/card/card.component';
 
 @Component({
   selector: 'app-about-section',

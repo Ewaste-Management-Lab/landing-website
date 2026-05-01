@@ -1,10 +1,14 @@
 # Project Tasks
 
 ## Backlog
+- [ ] **Task 010** (#25): Configure TypeScript path aliases and refactor imports.
+- [ ] **Task 011** (#26): Implement swappable Light/Dark/System theme.
+- [ ] **Task 012** (#27): Integrate Lucide Icons.
 
 ## In Progress
 
 ## Completed
+- [x] **Task 010** (#25): Configure TypeScript path aliases and refactor imports.
 - [x] **Task 009** (#23): Ensure robust CSS loading by moving global styles to angular.json.
 - [x] **Task 008** (#21): Fix missing colors and styles by importing global CSS.
 - [x] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).

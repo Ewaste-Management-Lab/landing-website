@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContainerComponent } from '../../../shared/container/container.component';
-import { CardComponent } from '../../../shared/card/card.component';
-import { ButtonComponent } from '../../../shared/button/button.component';
+import { ContainerComponent } from '@shared/container/container.component';
+import { CardComponent } from '@shared/card/card.component';
+import { ButtonComponent } from '@shared/button/button.component';
 
 @Component({
   selector: 'app-services-section',

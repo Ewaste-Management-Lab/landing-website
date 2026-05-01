@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContainerComponent } from '../../../shared/container/container.component';
+import { ContainerComponent } from '@shared/container/container.component';
 
 @Component({
   selector: 'app-partners-section',
