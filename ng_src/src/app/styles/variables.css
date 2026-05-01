@@ -82,6 +82,8 @@
   --color-border-primary: #e5e7eb;
   --color-border-secondary: #d1d5db;
 
+  --color-bg-header: rgba(255, 255, 255, 0.8);
+
   --color-primary: var(--color-primary-base);
   --color-secondary: var(--color-secondary-base);
   --color-accent: var(--color-accent-base);
@@ -113,6 +115,8 @@
   
   --color-border-primary: #374151;
   --color-border-secondary: #4b5563;
+
+  --color-bg-header: rgba(17, 24, 39, 0.8);
 
   --color-primary: #f9fafb;
   --color-secondary: #818cf8;
