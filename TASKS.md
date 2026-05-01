@@ -9,8 +9,8 @@
 - [ ] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).
 
 ## In Progress
-- [ ] **Task 001** (#7): Implement Navigation Bar (Header) component.
 
 ## Completed
+- [x] **Task 001** (#7): Implement Navigation Bar (Header) component.
 - [x] **Task 000**: Initialize project documentation and workflow.
 - [x] Initial project structure setup.
