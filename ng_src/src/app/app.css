@@ -1,0 +1,6 @@
+@import './styles/variables.css';
+@import './styles/global.css';
+
+:host {
+  display: block;
+}

@@ -1,0 +1,50 @@
+/* About Section Styles */
+
+.about {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-gray-50);
+}
+
+.about-content h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-primary);
+}
+
+.about-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-3xl);
+  font-size: var(--font-size-lg);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.about-card {
+  text-align: center;
+}
+
+.about-card h3 {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-card p {
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
