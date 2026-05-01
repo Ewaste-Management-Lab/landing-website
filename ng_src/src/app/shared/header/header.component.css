@@ -15,8 +15,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  max-width: 1400px; /* Allow a bit more width for the 3-column look */
-  margin: 0 auto;
+  margin: 0;
   padding: 0 var(--spacing-xl);
 }
 
