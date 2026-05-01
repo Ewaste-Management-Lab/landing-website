@@ -16,19 +16,24 @@ import { ContainerComponent } from '../container/container.component';
               <span class="logo-text">E-Waste <span class="highlight">Eco Lab</span></span>
             </a>
           </div>
-          <nav class="nav">
+          <button class="mobile-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <nav class="nav" [class.nav--open]="isMenuOpen">
             <ul class="nav-list">
               <li class="nav-item">
-                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
               </li>
               <li class="nav-item">
-                <a routerLink="/about" routerLinkActive="active">About</a>
+                <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
               </li>
               <li class="nav-item">
-                <a routerLink="/services" routerLinkActive="active">Services</a>
+                <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Programs</a>
               </li>
               <li class="nav-item">
-                <a routerLink="/contact" routerLinkActive="active">Contact</a>
+                <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
               </li>
             </ul>
           </nav>
@@ -38,4 +43,14 @@ import { ContainerComponent } from '../container/container.component';
   `,
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+}
