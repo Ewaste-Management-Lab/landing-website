@@ -25,6 +25,8 @@
               }
             ],
             "styles": [
+              "src/app/styles/variables.css",
+              "src/app/styles/global.css",
               "src/styles.css"
             ]
           },

@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 009** (#23): Ensure robust CSS loading by moving global styles to angular.json.
 - [x] **Task 008** (#21): Fix missing colors and styles by importing global CSS.
 - [x] **Task 007** (#13): Add "Partners" or "Supported By" section (Makerere University, etc.).
 - [x] **Task 006** (#12): Ensure full mobile responsiveness across all sections.
