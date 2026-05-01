@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { HeroSectionComponent } from './hero-section/hero-section.component';
-import { PartnersSectionComponent } from './partners-section/partners-section.component';
-import { AboutSectionComponent } from './about-section/about-section.component';
-import { ServicesSectionComponent } from './services-section/services-section.component';
-import { ContactSectionComponent } from './contact-section/contact-section.component';
-import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { HeroSectionComponent } from '@pages/landing/hero-section/hero-section.component';
+import { PartnersSectionComponent } from '@pages/landing/partners-section/partners-section.component';
+import { AboutSectionComponent } from '@pages/landing/about-section/about-section.component';
+import { ServicesSectionComponent } from '@pages/landing/services-section/services-section.component';
+import { ContactSectionComponent } from '@pages/landing/contact-section/contact-section.component';
+import { FooterSectionComponent } from '@pages/landing/footer-section/footer-section.component';
 
 @Component({
   selector: 'app-landing',
