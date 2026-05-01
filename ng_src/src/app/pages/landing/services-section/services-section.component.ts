@@ -12,8 +12,8 @@ import { ButtonComponent } from '../../../shared/button/button.component';
     <section class="services">
       <app-container>
         <div class="services-header">
-          <h2>Our Services</h2>
-          <p>We provide comprehensive solutions for e-waste management and sustainability research.</p>
+          <h2>Student Programs</h2>
+          <p>We focus on skilling students with practical knowledge and innovative thinking for sustainable e-waste management.</p>
         </div>
         <div class="services-grid">
           <app-card *ngFor="let service of services" [title]="service.title">
@@ -31,20 +31,20 @@ import { ButtonComponent } from '../../../shared/button/button.component';
 export class ServicesSectionComponent {
   services = [
     {
-      title: 'E-Waste Collection',
-      description: 'Safe and organized collection of electronic waste from institutions and individuals.',
+      title: 'Technical Workshops',
+      description: 'Hands-on sessions for students to learn about electronic components, disassembly, and safe handling of e-waste.',
     },
     {
-      title: 'Refurbishment',
-      description: 'Repairing and upgrading old electronics to extend their lifecycle and reduce waste.',
+      title: 'Innovation Projects',
+      description: 'Mentorship for students to develop creative solutions for recycling and upcycling electronic waste.',
     },
     {
-      title: 'Material Recovery',
-      description: 'Extracting valuable materials from non-functional devices using eco-friendly methods.',
+      title: 'Environmental Advocacy',
+      description: 'Training students to become ambassadors for sustainable consumption and proper e-waste disposal within the university.',
     },
     {
-      title: 'Consultancy',
-      description: 'Providing expert advice on sustainable electronics procurement and disposal policies.',
+      title: 'Research Assistantships',
+      description: 'Opportunities for students to participate in data collection and analysis for lab research projects.',
     },
   ];
 }
