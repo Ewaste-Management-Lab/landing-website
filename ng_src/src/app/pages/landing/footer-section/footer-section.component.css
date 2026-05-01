@@ -1,10 +1,11 @@
 /* Footer Section Styles */
 
 .footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
   padding: var(--spacing-3xl) 0 0;
-  margin-top: var(--spacing-4xl);
+  border-top: 1px solid var(--color-border-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 .footer-content {
@@ -17,13 +18,13 @@
 }
 
 .footer-section h4 {
-  color: var(--color-white);
+  color: var(--color-text-primary);
   margin-bottom: var(--spacing-md);
   font-size: var(--font-size-lg);
 }
 
 .footer-section p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
 }
 
@@ -38,7 +39,7 @@
 }
 
 .footer-section a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
   transition: color var(--transition-fast);
 }
 
@@ -50,8 +51,8 @@
 .footer-bottom {
   text-align: center;
   padding: var(--spacing-lg);
-  border-top: var(--border-width-thin) solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.6);
+  border-top: var(--border-width-thin) solid var(--color-border-primary);
+  color: var(--color-text-muted);
   font-size: var(--font-size-sm);
 }
 

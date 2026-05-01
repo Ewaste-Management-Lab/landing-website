@@ -11,9 +11,10 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
-  color: var(--color-gray-900);
-  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
   height: 100%;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 /* Typography */
@@ -52,7 +53,7 @@ h6 {
 
 p {
   line-height: var(--line-height-relaxed);
-  color: var(--color-gray-600);
+  color: var(--color-text-secondary);
 }
 
 a {
@@ -62,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -72,6 +73,8 @@ button {
   font-size: inherit;
   border: none;
   cursor: pointer;
+  background: none;
+  color: inherit;
 }
 
 /* Remove default input styles */
@@ -80,6 +83,8 @@ textarea,
 select {
   font-family: inherit;
   font-size: inherit;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 /* Utility classes */
