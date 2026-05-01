@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 014** (#32): Improve Header and Hero layout and add background blob.
 - [x] **Task 013** (#30): Fix syntax error in ContactSectionComponent causing CI failure.
 - [x] **Task 012** (#27): Integrate Lucide Icons.
 - [x] **Task 011** (#26): Implement swappable Light/Dark/System theme.
