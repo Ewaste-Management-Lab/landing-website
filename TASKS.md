@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 016** (#36): Add CONTRIBUTING.md outlining development workflow.
 - [x] **Task 015** (#34): Refine Header spacing and Hero blob animation.
 - [x] **Task 014** (#32): Improve Header and Hero layout and add background blob.
 - [x] **Task 013** (#30): Fix syntax error in ContactSectionComponent causing CI failure.
