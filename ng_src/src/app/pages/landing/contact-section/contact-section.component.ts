@@ -66,7 +66,6 @@ export class ContactSectionComponent {
   readonly MapPinIcon = MapPin;
   readonly MailIcon = Mail;
   readonly SendIcon = Send;
-...
 
   onSubmit(event: Event) {
     event.preventDefault();
