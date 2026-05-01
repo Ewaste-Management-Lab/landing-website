@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false # Required for semantic-release to use its own token
 
       - name: Install Bun
         uses: oven-sh/setup-bun@v1
@@ -19,6 +21,10 @@ jobs:
       - name: Install Just
         uses: extractions/setup-just@v2
 
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: just release
       - name: Install Dependencies
         run: just install
 
