@@ -5,6 +5,7 @@
 ## In Progress
 
 ## Completed
+- [x] **Task 019** (#42): Fix navigation and active section indication.
 - [x] **Task 018** (#40): Refactor Header to 100% width.
 - [x] **Task 017** (#38): Implement morphing blob and full-width header.
 - [x] **Task 016** (#36): Add CONTRIBUTING.md outlining development workflow.

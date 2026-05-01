@@ -9,7 +9,7 @@ import { ButtonComponent } from '@shared/button/button.component';
   standalone: true,
   imports: [CommonModule, ContainerComponent, CardComponent, ButtonComponent],
   template: `
-    <section class="services">
+    <section class="services" id="programs">
       <app-container>
         <div class="services-header">
           <h2>Student Programs</h2>
