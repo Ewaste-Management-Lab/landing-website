@@ -16,15 +16,19 @@ export class ThemeService {
     effect(() => {
       const currentTheme = this.theme();
       this.applyTheme(currentTheme);
-      localStorage.setItem(this.STORAGE_KEY, currentTheme);
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(this.STORAGE_KEY, currentTheme);
+      }
     });
 
     // Listen for system theme changes if set to 'system'
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-      if (this.theme() === 'system') {
-        this.applyTheme('system');
-      }
-    });
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if (this.theme() === 'system') {
+          this.applyTheme('system');
+        }
+      });
+    }
   }
 
   setTheme(theme: Theme) {
@@ -32,11 +36,17 @@ export class ThemeService {
   }
 
   private getStoredTheme(): Theme {
-    const stored = localStorage.getItem(this.STORAGE_KEY) as Theme;
-    return stored || 'system';
+    if (typeof localStorage !== 'undefined' && typeof localStorage.getItem === 'function') {
+      const stored = localStorage.getItem(this.STORAGE_KEY) as Theme;
+      return stored || 'system';
+    }
+    return 'system';
   }
 
   private applyTheme(theme: Theme) {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
     let activeTheme: 'light' | 'dark';
 
     if (theme === 'system') {

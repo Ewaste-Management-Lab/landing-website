@@ -1,6 +1,6 @@
 import { Component, HostListener, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { ContainerComponent } from '@shared/container/container.component';
 import { ThemeToggleComponent } from '@shared/theme-toggle/theme-toggle.component';
 import { LucideAngularModule, Menu, X, Recycle } from 'lucide-angular';
@@ -11,7 +11,6 @@ import { LucideAngularModule, Menu, X, Recycle } from 'lucide-angular';
   imports: [
     CommonModule, 
     RouterLink, 
-    RouterLinkActive, 
     ThemeToggleComponent,
     LucideAngularModule
   ],
