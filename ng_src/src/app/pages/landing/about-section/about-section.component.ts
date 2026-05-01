@@ -7,7 +7,7 @@ import { CardComponent } from '@shared/card/card.component';
   standalone: true,
   imports: [ContainerComponent, CardComponent],
   template: `
-    <section class="about">
+    <section class="about" id="about">
       <app-container>
         <div class="about-content">
           <h2>About Our Lab</h2>

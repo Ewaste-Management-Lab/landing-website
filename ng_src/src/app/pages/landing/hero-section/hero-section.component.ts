@@ -8,7 +8,7 @@ import { LucideAngularModule, ArrowRight, Info } from 'lucide-angular';
   standalone: true,
   imports: [ContainerComponent, ButtonComponent, LucideAngularModule],
   template: `
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-background">
         <div class="blob"></div>
       </div>
