@@ -19,3 +19,8 @@
 - Use Vanilla CSS with CSS variables.
 - Follow the established design system in `variables.css`.
 - Use utility classes for common patterns.
+
+## 5. Factual Accuracy
+- NEVER invent information about the lab (stats, services, partners, etc.).
+- Use placeholders (e.g., "XX", "Location") if information is unknown.
+- Stick to the core mission: E-waste management and student skilling at Makerere University.
