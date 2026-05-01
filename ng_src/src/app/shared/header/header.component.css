@@ -12,9 +12,12 @@
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  max-width: 1400px; /* Allow a bit more width for the 3-column look */
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
 }
 
 .logo {
@@ -54,9 +57,11 @@
 .nav-list {
   display: flex;
   list-style: none;
-  gap: var(--spacing-2xl);
+  gap: var(--spacing-3xl);
   margin: 0;
   padding: 0;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .nav-item a {
@@ -64,6 +69,7 @@
   font-weight: var(--font-weight-medium);
   transition: color var(--transition-fast);
   white-space: nowrap;
+  letter-spacing: 0.025em;
 }
 
 .nav-item a:hover,
@@ -89,7 +95,6 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
   flex: 1;
   justify-content: flex-end;
 }
@@ -98,15 +103,21 @@
   display: none;
   color: var(--color-text-primary);
   padding: var(--spacing-sm);
+  margin-left: var(--spacing-md);
 }
 
 @media (max-width: 1024px) {
   .nav-list {
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xl);
   }
 }
 
 @media (max-width: 768px) {
+  .header-inner {
+    justify-content: space-between;
+    padding: 0 var(--spacing-md);
+  }
+
   .nav {
     position: fixed;
     top: 80px;
@@ -131,6 +142,7 @@
     align-items: center;
     padding: var(--spacing-xl) 0;
     gap: var(--spacing-lg);
+    justify-content: center;
   }
 
   .nav-item a.active::after {
