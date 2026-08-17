@@ -1,8 +1,8 @@
 # justfile
 set shell := ["bash", "-c"]
 
-# Commands are executed relative to ng_src
-ng_root := "ng_src"
+# Commands are executed relative to frontend
+ng_root := "frontend"
 
 default:
     @just --list
