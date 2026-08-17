@@ -29,7 +29,8 @@
 }
 
 .logo-icon {
-  color: var(--color-accent);
+  width: 36px;
+  height: 36px;
 }
 
 .logo-text {

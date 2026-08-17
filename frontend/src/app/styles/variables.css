@@ -24,8 +24,8 @@
   --spacing-3xl: 3rem;
   --spacing-4xl: 4rem;
 
-  /* Typography - Sono */
-  --font-family-base: 'Sono', monospace;
+  /* Typography - Comfortaa */
+  --font-family-base: 'Comfortaa', cursive;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -77,29 +77,29 @@
 /* Light Theme */
 :root,
 [data-theme='light'] {
-  --color-bg-primary: #f0fdf4;
-  --color-bg-secondary: #dcfce7;
-  --color-bg-tertiary: #bbf7d0;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f0fdf4;
+  --color-bg-tertiary: #dcfce7;
 
   --color-text-primary: #14532d;
-  --color-text-secondary: #166534;
-  --color-text-muted: #15803d;
+  --color-text-secondary: #3f5a46;
+  --color-text-muted: #5f8068;
 
-  --color-border-primary: #86efac;
-  --color-border-secondary: #4ade80;
+  --color-border-primary: #bbf7d0;
+  --color-border-secondary: #86efac;
 
-  --color-bg-header: rgba(240, 253, 244, 0.85);
+  --color-bg-header: rgba(255, 255, 255, 0.85);
 
   --color-primary: #15803d;
   --color-secondary: #16a34a;
   --color-accent: #22c55e;
 
-  --color-white: #f0fdf4;
+  --color-white: #ffffff;
   --color-black: #14532d;
 
-  --color-surface: #f0fdf4;
-  --color-surface-raised: #dcfce7;
-  --color-surface-overlay: rgba(240, 253, 244, 0.9);
+  --color-surface: #ffffff;
+  --color-surface-raised: #f0fdf4;
+  --color-surface-overlay: rgba(255, 255, 255, 0.9);
 }
 
 /* Dark Theme */

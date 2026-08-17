@@ -12,7 +12,7 @@ import { ButtonComponent } from '@shared/button/button.component';
     <section class="services" id="programs">
       <app-container>
         <div class="services-header">
-          <h2>Skills We Teach</h2>
+          <h2>Skills Learnt</h2>
           <p>
             Every restored device is a learning opportunity. Students gain hands-on experience
             across real hardware and systems.

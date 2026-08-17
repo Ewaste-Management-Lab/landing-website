@@ -2,7 +2,7 @@ import { Component, HostListener, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ThemeToggleComponent } from '@shared/theme-toggle/theme-toggle.component';
-import { LucideAngularModule, Menu, X, Recycle } from 'lucide-angular';
+import { LucideAngularModule, Menu, X } from 'lucide-angular';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ import { LucideAngularModule, Menu, X, Recycle } from 'lucide-angular';
     <header class="header">
       <div class="logo">
         <a routerLink="/" fragment="home" class="logo-link">
-          <lucide-icon [name]="RecycleIcon" class="logo-icon"></lucide-icon>
+          <img src="favicon.svg" alt="E-Waste Eco Lab" class="logo-icon" />
           <span class="logo-text">E-Waste <span class="highlight">Eco Lab</span></span>
         </a>
       </div>
@@ -75,12 +75,11 @@ export class HeaderComponent {
 
   readonly MenuIcon = Menu;
   readonly XIcon = X;
-  readonly RecycleIcon = Recycle;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const sections = ['home', 'about', 'programs', 'contact'];
-    const scrollPosition = window.pageYOffset + 100; // Offset for header height
+    const scrollPosition = window.pageYOffset + 100;
 
     for (const section of sections) {
       const element = document.getElementById(section);
