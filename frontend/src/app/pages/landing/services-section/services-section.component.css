@@ -13,10 +13,12 @@
 .services-header h2 {
   margin-bottom: var(--spacing-md);
   color: var(--color-text-primary);
+  animation: slideUp 0.5s ease-out;
 }
 
 .services-header p {
   color: var(--color-text-secondary);
+  animation: slideUp 0.5s ease-out 0.1s both;
 }
 
 .services-grid {
