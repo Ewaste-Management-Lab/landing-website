@@ -24,8 +24,8 @@
   --spacing-3xl: 3rem;
   --spacing-4xl: 4rem;
 
-  /* Typography - Sono */
-  --font-family-base: 'Sono', monospace;
+  /* Typography - Comfortaa */
+  --font-family-base: 'Comfortaa', cursive;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -61,70 +61,108 @@
   --border-width-normal: 1px;
   --border-width-thick: 2px;
 
-  /* Shadows - Green tinted */
-  --shadow-sm: 0 1px 2px 0 rgba(22, 101, 52, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(22, 101, 52, 0.1), 0 2px 4px -1px rgba(22, 101, 52, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(22, 101, 52, 0.1), 0 4px 6px -2px rgba(22, 101, 52, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(22, 101, 52, 0.1), 0 10px 10px -5px rgba(22, 101, 52, 0.04);
-  --shadow-glow: 0 0 20px rgba(34, 197, 94, 0.2);
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(34, 197, 94, 0.3);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-normal: 250ms ease-in-out;
   --transition-slow: 350ms ease-in-out;
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-scale-in: scaleIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Light Theme */
 :root,
 [data-theme='light'] {
-  --color-bg-primary: #f0fdf4;
-  --color-bg-secondary: #dcfce7;
-  --color-bg-tertiary: #bbf7d0;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fdf9;
+  --color-bg-tertiary: #f0fdf4;
 
   --color-text-primary: #14532d;
-  --color-text-secondary: #166534;
-  --color-text-muted: #15803d;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6b7280;
 
-  --color-border-primary: #86efac;
-  --color-border-secondary: #4ade80;
+  --color-border-primary: #e5e7eb;
+  --color-border-secondary: #d1d5db;
 
-  --color-bg-header: rgba(240, 253, 244, 0.85);
+  --color-bg-header: rgba(255, 255, 255, 0.8);
 
   --color-primary: #15803d;
   --color-secondary: #16a34a;
   --color-accent: #22c55e;
 
-  --color-white: #f0fdf4;
+  --color-white: #ffffff;
   --color-black: #14532d;
 
-  --color-surface: #f0fdf4;
-  --color-surface-raised: #dcfce7;
-  --color-surface-overlay: rgba(240, 253, 244, 0.9);
+  --color-surface: #ffffff;
+  --color-surface-raised: #f8fdf9;
+  --color-surface-overlay: rgba(255, 255, 255, 0.95);
 }
 
 /* Dark Theme */
 [data-theme='dark'] {
-  --color-bg-primary: #052e16;
-  --color-bg-secondary: #14532d;
-  --color-bg-tertiary: #166534;
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #111111;
+  --color-bg-tertiary: #1a1a1a;
 
-  --color-text-primary: #dcfce7;
-  --color-text-secondary: #86efac;
-  --color-text-muted: #4ade80;
+  --color-text-primary: #f0fdf4;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #9ca3af;
 
-  --color-border-primary: #166534;
-  --color-border-secondary: #15803d;
+  --color-border-primary: #262626;
+  --color-border-secondary: #404040;
 
-  --color-bg-header: rgba(5, 46, 22, 0.85);
+  --color-bg-header: rgba(10, 10, 10, 0.85);
 
   --color-primary: #4ade80;
   --color-secondary: #22c55e;
   --color-accent: #86efac;
 
-  --color-white: #dcfce7;
-  --color-black: #052e16;
+  --color-white: #f0fdf4;
+  --color-black: #0a0a0a;
 
-  --color-surface: #052e16;
+  --color-surface: #0a0a0a;
   --color-surface-raised: #14532d;
-  --color-surface-overlay: rgba(5, 46, 22, 0.9);
+  --color-surface-overlay: rgba(10, 10, 10, 0.95);
 }

@@ -14,11 +14,13 @@
 .contact-info h2 {
   margin-bottom: var(--spacing-md);
   color: var(--color-text-primary);
+  animation: slideUp 0.5s ease-out;
 }
 
 .contact-info p {
   margin-bottom: var(--spacing-xl);
   color: var(--color-text-secondary);
+  animation: slideUp 0.5s ease-out 0.1s both;
 }
 
 .contact-details {
@@ -44,8 +46,10 @@
   gap: var(--spacing-lg);
   background-color: var(--color-bg-secondary);
   padding: var(--spacing-2xl);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   border: 1px solid var(--color-border-primary);
+  box-shadow: var(--shadow-md);
+  animation: slideUp 0.5s ease-out 0.2s both;
   transition:
     background-color var(--transition-normal),
     border-color var(--transition-normal);
@@ -66,7 +70,7 @@
 .form-group input,
 .form-group textarea {
   padding: var(--spacing-sm) var(--spacing-md);
-  border: 1px solid var(--color-border-secondary);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--radius-md);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
@@ -78,7 +82,7 @@
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-secondary);
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
 }
 
 .btn-icon {
