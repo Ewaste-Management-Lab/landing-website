@@ -23,14 +23,18 @@ import { LucideAngularModule, ArrowRight, Info } from 'lucide-angular';
             chance.
           </p>
           <div class="hero-actions">
-            <app-button variant="primary" size="lg">
-              Our Programs
-              <lucide-icon [name]="ArrowRightIcon" [size]="18" class="btn-icon"></lucide-icon>
-            </app-button>
-            <app-button variant="outline" size="lg">
-              Learn More
-              <lucide-icon [name]="InfoIcon" [size]="18" class="btn-icon"></lucide-icon>
-            </app-button>
+            <a href="#programs">
+              <app-button variant="primary" size="lg">
+                Our Programs
+                <lucide-icon [name]="ArrowRightIcon" [size]="18" class="btn-icon"></lucide-icon>
+              </app-button>
+            </a>
+            <a href="#about">
+              <app-button variant="outline" size="lg">
+                Learn More
+                <lucide-icon [name]="InfoIcon" [size]="18" class="btn-icon"></lucide-icon>
+              </app-button>
+            </a>
           </div>
         </div>
       </app-container>
