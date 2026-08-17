@@ -8,6 +8,7 @@
   text-align: center;
   margin-bottom: var(--spacing-md);
   color: var(--color-text-primary);
+  animation: slideUp 0.5s ease-out;
 }
 
 .about-description {
@@ -16,12 +17,29 @@
   margin: 0 auto var(--spacing-3xl);
   color: var(--color-text-secondary);
   font-size: var(--font-size-lg);
+  animation: slideUp 0.5s ease-out 0.1s both;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-xl);
+}
+
+.about-card {
+  animation: slideUp 0.5s ease-out both;
+}
+
+.about-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.about-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.about-card:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 .about-card h3 {
